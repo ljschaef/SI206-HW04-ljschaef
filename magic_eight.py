@@ -1,6 +1,4 @@
-
-
-
+import random
 
 
 
@@ -28,4 +26,4 @@ answers = ["It is certain",
 "Outlook not so good"
 "Very doubtful"]
 
-get_answer = rand[answers]
+get_answer = random.choice(answers)
