@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 import random
 
 
 
 
 
+=======
+def magic_eight_ball():
+    response = input("What is your question?")
+    return response
+>>>>>>> de2d8eee62e85fdc10f601f011f8b3f27649b0e9
 
 answers = ["It is certain",
 "It is decidedly so",
