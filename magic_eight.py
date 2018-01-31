@@ -1,19 +1,11 @@
+import random
+
+
 def magic_eight_ball():
-    response = input("What is your question?")
-    return response
+ response = input("What is your question? ")
+ answers =["It is certain","It is decidedly so","Without a doubt","Yes definitely","You may rely on it","As I see it, yes","Most likely","Outlook good","Yes","Signs point to yes","Reply hazy try again","Ask again later","Better not tell you now","Cannot predict now","Concentrate and ask again","Don't count on it","My reply is no","My sources say no","Outlook not so good","Very doubtful"]
+ get_answer = random.choice(answers)
+ print(get_answer)
 
-def check_question():
-    response = magic_eight_ball()
-    if response[len(response) - 1] != '?':
-        print("I'm sorry, I can only accept questions")
-        return 1
-    elif response == "quit":
-        return 0
 
-def __main__():
-    stuff = check_question()
-    while stuff != 0:
-        check_question()
-        pass
-    print("Thanks for playing!")
-    pass
+magic_eight_ball()
